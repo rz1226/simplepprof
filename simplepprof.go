@@ -19,7 +19,7 @@ func init() {
 
 	//cpu
 	var err error
-	cpupprofFile, err = os.Create("cpu.prof")
+	cpupprofFile, err = os.Create("cpu.pprof")
 	if err != nil {
 		log.Fatal(err)
 		return
